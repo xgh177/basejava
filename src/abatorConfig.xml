@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE abatorConfiguration PUBLIC "-//Apache Software Foundation//DTD Abator for iBATIS Configuration 1.0//EN"
+  "http://ibatis.apache.org/dtd/abator-config_1_0.dtd">
+
+<abatorConfiguration>
+  <abatorContext>    <!-- TODO: Add Database Connection Information -->
+    <jdbcConnection driverClass="???"
+        connectionURL="???"
+        userId="???"
+        password="???">
+      <classPathEntry location="???" />
+    </jdbcConnection>
+
+    <javaModelGenerator targetPackage="???" targetProject="???" />
+    <sqlMapGenerator targetPackage="???" targetProject="???" />
+    <daoGenerator type="IBATIS" targetPackage="???" targetProject="???" />
+
+    <table schema="???" tableName="???">
+      <columnOverride column="???" property="???" />
+    </table>
+
+  </abatorContext>
+</abatorConfiguration>
