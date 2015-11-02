@@ -22,7 +22,7 @@ public class Test {
 		 * jdbc:sqlite:/test/test.db --> windows系统上，test.db文件将在分区所在的根目录下的test目录(如果项目文件在在d盘，则test.db将在d:\test目录下创建)
 		 * jdbc:sqlite://c://test.db --> windows系统上，test.db文件将在c盘下创建。
 		 */
-		Connection conn = DriverManager.getConnection("jdbc:sqlite://c://test.db");
+		Connection conn = DriverManager.getConnection("jdbc:sqlite:/test.db");
 		Statement stmt = conn.createStatement();
 
 		// 2 创建一个表tbl1，录入数据

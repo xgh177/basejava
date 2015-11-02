@@ -4,19 +4,19 @@
 
 <abatorConfiguration>
   <abatorContext>    <!-- TODO: Add Database Connection Information -->
-    <jdbcConnection driverClass="???"
-        connectionURL="???"
-        userId="???"
-        password="???">
-      <classPathEntry location="???" />
+    <jdbcConnection driverClass="com.informix.jdbc.IfxDriver"
+        connectionURL="jdbc:informix-sqli://192.168.1.6:9088/match:informixserver=ol_ids_1150_1"
+        userId="informix"
+        password="111111">
+      <classPathEntry location="c:/javalib/ifxjdbc.jar" />
     </jdbcConnection>
 
-    <javaModelGenerator targetPackage="???" targetProject="???" />
-    <sqlMapGenerator targetPackage="???" targetProject="???" />
-    <daoGenerator type="IBATIS" targetPackage="???" targetProject="???" />
+    <javaModelGenerator targetPackage="com.test.model" targetProject="test" />
+    <sqlMapGenerator targetPackage="com.test.sqlmap" targetProject="test" />
+    <daoGenerator type="IBATIS" targetPackage="com.test.dao" targetProject="test" />
 
-    <table schema="???" tableName="???">
-      <columnOverride column="???" property="???" />
+    <table schema="" tableName="euser">
+      <columnOverride column="ename" property="name" />
     </table>
 
   </abatorContext>
